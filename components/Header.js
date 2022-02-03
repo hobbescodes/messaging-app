@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
-import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
+import Avatar from "./Avatar";
 
 function Header() {
 const { user, logout } = useMoralis();
@@ -11,7 +11,7 @@ const { user, logout } = useMoralis();
       <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
           <div className="text-left lg:text-center col-span-6">
               <div className="relative h-48 w-48 lg:mx-auto border-[#fb03ff] border-8 rounded-full hidden lg:inline-grid">
-                  <Avatar />
+                  <Avatar changeAvatar />
               </div>
               <h2 className="text-3xl mt-4 font-bold truncate">{user.getUsername()}</h2>
 
