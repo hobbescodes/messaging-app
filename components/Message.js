@@ -14,12 +14,12 @@ const isUserMessage = message.get('ethAddress') === user.get("ethAddress");
         <div className={`relative h-8 w-8 ${
             isUserMessage && "order-last ml-2"
         }`}>
-            <Avatar username={message.get("username")} profilePic={message.get("profilePic")} />
+            <Avatar username={message.get("username")}/>
         </div>
         <div className={`flex space-x-4 p-3 rounded-lg ${
             isUserMessage ? 'rounded-br-none bg-[#00dbf3]' : 'rounded-bl-none bg-[#fb03ff]'
         }`}>
-        <p>{message.get("message")}</p>
+        <p className="max-w-xs overflow-clip">{message.get("message")}</p>
         </div>
 
         <TimeAgo className={`text-[10px] italic text-gray-400 ${

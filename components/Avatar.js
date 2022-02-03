@@ -21,7 +21,7 @@ const styles = {
   },
 };
 
-function Avatar({ username, changeAvatar, profilePic }) {
+function Avatar({ changeAvatar, username }) {
 
   const { user, Moralis, setUserData } = useMoralis();
   let [isOpen, setIsOpen] = useState(false);
@@ -134,14 +134,5 @@ function Avatar({ username, changeAvatar, profilePic }) {
     </>
   );
 }
-
-export async function getServerSideProps() {
-    // Fetch data from external API
-    const res = await fetch(`https://api.opensea.io/api/v1/assets?limit=50&offset=0`)
-    const data = await res.json()
-  
-    // Pass data to the page via props
-    return { props: { data } }
-  }
 
 export default Avatar;
