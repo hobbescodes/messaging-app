@@ -34,7 +34,7 @@ function SendMessage({ endOfMessagesRef }) {
   };
 
   return (
-    <form className="flex w-11/12 fixed bottom-10 bg-black opacity-80 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-[#a126ff]">
+    <form className="flex w-11/12 fixed bottom-10 bg-black opacity-80 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-[#fb03ff]">
       <input
         type="text"
         placeholder={`Enter a Message ${user.getUsername()}...`}
@@ -42,7 +42,7 @@ function SendMessage({ endOfMessagesRef }) {
         onChange={e => setMessage(e.target.value)}
         className="flex-grow pr-5 outline-none bg-transparent text-white placeholder-gray-500"
       />
-      <button type="submit" onClick={sendMessage} className="font-bold text-[#a126ff]">Send</button>
+      <button type="submit" onClick={sendMessage} className="font-bold text-[#fb03ff]">Send</button>
     </form>
   );
 }

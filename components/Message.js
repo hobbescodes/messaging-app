@@ -17,7 +17,7 @@ const isUserMessage = message.get('ethAddress') === user.get("ethAddress");
             <Avatar username={message.get("username")}/>
         </div>
         <div className={`flex space-x-4 p-3 rounded-lg ${
-            isUserMessage ? 'rounded-br-none bg-[#00dbf3]' : 'rounded-bl-none bg-[#a940ff]'
+            isUserMessage ? 'rounded-br-none bg-[#00dbf3]' : 'rounded-bl-none bg-[#fb03ff]'
         }`}>
         <p>{message.get("message")}</p>
         </div>
@@ -27,7 +27,7 @@ const isUserMessage = message.get('ethAddress') === user.get("ethAddress");
         }`} datetime={message.createdAt} />
 
         <p className={`absolute -bottom-5 text-xs ${
-            isUserMessage ? 'text-[#00dbf3]' : 'text-[#a940ff]'
+            isUserMessage ? 'text-[#00dbf3]' : 'text-[#fb03ff]'
         }`}>
             {message.get("username")}
         </p>
