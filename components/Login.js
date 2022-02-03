@@ -6,7 +6,7 @@ function Login() {
 
   return (
     <div className="bg-black relative text-white">
-      <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-14">
+      <div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-16">
         <div className="border-2 border-[#ec07ee] rounded-full relative w-[200px] h-[200px]">
         <Image
           src="/images/hobbes.png"
