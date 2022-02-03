@@ -21,7 +21,7 @@ const styles = {
   },
 };
 
-function Avatar({ username, changeAvatar }) {
+function Avatar({ username, changeAvatar, profilePic }) {
 
   const { user, Moralis, setUserData } = useMoralis();
   let [isOpen, setIsOpen] = useState(false);
