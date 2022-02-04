@@ -24,7 +24,7 @@ function Messages() {
 
   return (
     <div className="pb-56">
-      <div className="sticky top-[205px] lg:top-[300px] my-5 opacity-80 z-50">
+      <div className="sticky top-[12px] lg:top-[300px] my-5 opacity-80 z-50">
         <ByMoralis
           variant="dark"
           style={{ marginLeft: "auto", marginRight: "auto" }}

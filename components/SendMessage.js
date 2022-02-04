@@ -76,7 +76,7 @@ function SendMessage({ endOfMessagesRef }) {
   };
 
   return (
-    <form className="flex w-11/12 fixed bottom-10 bg-black px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-[#fb03ff]">
+    <form className="flex w-11/12 fixed bottom-10 bg-black px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-[#057cc1]">
       <input
         type="text"
         placeholder={`Enter a Message ${user.getUsername()}...`}
@@ -93,13 +93,13 @@ function SendMessage({ endOfMessagesRef }) {
         accept="image/*"
       />
       <CameraIcon
-        className="h-10 w-10 cursor-pointer hover:animate-pulse text-[#fb03ff] px-2"
+        className="h-10 w-10 cursor-pointer hover:animate-pulse text-[#057cc1] px-2"
         onClick={handleClick}
       />
       <button
         type="submit"
         onClick={sendMessage}
-        className="font-bold text-[#fb03ff] hover:animate-pulse"
+        className="font-bold text-[#057cc1] hover:animate-pulse"
       >
         Send
       </button>

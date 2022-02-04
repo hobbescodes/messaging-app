@@ -20,7 +20,7 @@ const isUserMessage = message.get('ethAddress') === user.get("ethAddress");
         <div className={`flex flex-col space-x-4 p-3 rounded-lg ${
             isUserMessage ? 'rounded-br-none bg-[#00dbf3]' : 'rounded-bl-none bg-[#fb03ff]'
         }`}>
-        <p className="flex mb-2 max-w-xs lg:max-w-2xl overflow-clip">{message.get("message")}</p>
+        <p className="flex mb-2 max-w-xs lg:max-w-lg overflow-clip">{message.get("message")}</p>
         {message.get("photo") !== undefined ? <Image src={message.get("photo").url()} width={150} height={200} objectFit="cover" className="flex rounded-md" /> : null}
         </div>
 

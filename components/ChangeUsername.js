@@ -29,7 +29,7 @@ export default function ChangeUsername() {
 
   return (
     <>
-      <div className="absolute top-[70px] right-5 text-[#fb03ff] hover:text-[#057cc1] font-bold text-sm">
+      <div className="absolute top-[70px] right-5 hover:text-[#fb03ff] text-[#057cc1] font-bold text-sm">
         <button type="button" onClick={openModal} className="">
           Change Username
         </button>
