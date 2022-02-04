@@ -30,7 +30,7 @@ function Messages() {
           style={{ marginLeft: "auto", marginRight: "auto" }}
         />
       </div>
-      <div className="space-y-10 p-4">
+      <div className="space-y-10 p-8">
           {data.map(message => (
               <Message key={message.id} message={message} />
           ))}

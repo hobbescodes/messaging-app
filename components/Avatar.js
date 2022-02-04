@@ -11,7 +11,7 @@ const { Meta } = Card;
 const styles = {
   NFTs: {
     display: "flex",
-    flexWrap: "nowrap",
+    flexWrap: "wrap",
     overflow: "scroll",
     WebkitBoxPack: "center",
     justifyContent: "center",
@@ -42,7 +42,7 @@ function Avatar({ changeAvatar, username }) {
   return (
     <>
       <Image
-        className={`rounded-full bg-black ${changeAvatar && "cursor-pointer hover:animate-pulse"}`}
+        className={`rounded-full bg-black ${changeAvatar && "cursor-pointer hover:animate-spin"}`}
         src={profilePic}
         layout="fill"
         onClick={() => changeAvatar && openModal()}

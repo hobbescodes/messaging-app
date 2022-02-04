@@ -10,7 +10,8 @@ export default function Home() {
   if (!isAuthenticated) return <Login />;
 
   return (
-    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-[#420082] to-[#057cc1] overflow-hidden">
+    <div className="relative">
+          <div className="h-screen w-full bg-cover overflow-y-scroll bg-black overflow-hidden">
       <Head>
         <title>Web3 Messaging</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,5 +23,7 @@ export default function Home() {
       </div>
 
     </div>
+    </div>
+
   );
 }

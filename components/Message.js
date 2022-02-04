@@ -28,7 +28,7 @@ const isUserMessage = message.get('ethAddress') === user.get("ethAddress");
             isUserMessage && 'order-first pr-1'
         }`} datetime={message.createdAt} />
 
-        <p className={`absolute -bottom-5 text-xs ${
+        <p className={`absolute -bottom-6 text-xs ${
             isUserMessage ? 'text-[#00dbf3]' : 'text-[#fb03ff]'
         }`}>
             {message.get("username")}
